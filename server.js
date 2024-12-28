@@ -8,8 +8,7 @@ const app = express();
 
 // CORS configuration - this must come before any route definitions
 const corsOptions = {
-  origin: "http://localhost:3000", // your frontend URL
-  credentials: true,
+  origin: ['http://localhost:3000', 'https://maitri-wellness.netlify.app'],  credentials: true,
   optionsSuccessStatus: 200,
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "Accept"],
